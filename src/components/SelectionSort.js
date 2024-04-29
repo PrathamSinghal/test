@@ -12,7 +12,7 @@ const SelectionSort = () =>{
    let ids = myState.values.map((item) => item[1]);
 
    const solve = () => {
-      audio.play();
+      
       let n = values.length;
 
       for(let i = 0; i < n; i++){

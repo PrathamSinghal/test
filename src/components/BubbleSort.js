@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 import bubbleSortSound from '../assets/bubbleSortSound.mp3';
 
@@ -14,14 +15,21 @@ const BubbleSort = () =>{
    let ids = myState.values.map((item) => item[1]);
    
    const solve = () => {
-      audio.play();
+     
       
       for(let i = values.length,timer = 0; i > 0;timer += i-1, i--){
          setTimeout(() => {
+            if(values[i]>0) {
+               toast.success(`${values[i]} is sorted`, {
+                  position: toast.POSITION.TOP_RIGHT,
+               });
+            }
+
             for(let j = 1; j < i; j++){
                setTimeout(() => {
                   document.getElementById(ids[j]).childNodes[1].style.backgroundColor = 'black';
                   document.getElementById(ids[j-1]).childNodes[1].style.backgroundColor = 'black';
+                  
                   
                   setTimeout(() => {
                      document.getElementById(ids[j]).childNodes[1].style.backgroundColor = myState.color;
@@ -29,6 +37,8 @@ const BubbleSort = () =>{
                   },myState.speed-10);
                      
                   if(values[j]<values[j-1]){
+                     
+
                      let temp = values[j];
                      values[j] = values[j-1];
                      values[j-1] = temp;
@@ -44,6 +54,11 @@ const BubbleSort = () =>{
                   }
                },(j-1)*(myState.speed));
             }
+
+            
+
+            console.log(values[i],"yess");
+            console.log(i,"yessminusone");
          }
          ,(timer)*(myState.speed))
       }
@@ -69,7 +84,9 @@ const BubbleSort = () =>{
       }
    },[myState.play]);
 
-   return <></>;
+   return <>
+   <ToastContainer />
+   </>;
 }
 
 export default BubbleSort;

@@ -28,7 +28,7 @@ const InsertionSort = () =>{
    values = myState.values.map((item) => item[0]);
    
    const solve = () => {
-      audio.play();
+      
       
       for(let i = 0; i < values.length-1; i++){
             let ind = i+1;

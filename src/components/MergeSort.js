@@ -6,7 +6,7 @@ const MergeSort = () => {
    const myState = useSelector(state => state.updateProps);
    const dispatch = useDispatch();
 
-   const[audio]=useState[new Audio(mergeSortSound)];
+   const[audio] = useState(() => new Audio(mergeSortSound));  
 
    let values = myState.values.map((item) => item[0]);
    let ids = myState.values.map((item) => item[1]);
@@ -46,7 +46,7 @@ const MergeSort = () => {
    }
 
    const solve = () => {
-      audio.play();
+     
       mergeSort(values,ids,Math.ceil(Math.log(values.length+1)),0,values.length-1);
 
       setTimeout(() => {

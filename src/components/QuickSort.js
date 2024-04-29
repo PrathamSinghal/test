@@ -55,7 +55,7 @@ const QuickSort = () =>{
    }
    
    const solve = () => {
-      audio.play();
+      
 
       quickSort(values,ids,0,values.length-1,Math.ceil(Math.log(values.length+1)));
 
