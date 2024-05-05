@@ -92,10 +92,11 @@ function Sidebar({ selectedAlgorithm, isDisabled, handleAlgorithmChange }) {
                 <label htmlFor="algo">Algorithm: </label>
                 <select name="algo" id="algo" onChange={(e) => handleAlgo(e.target.value)} disabled={isDisabled}>
                     <option value="bubble">Bubble Sort </option>
-                    <option value="merge">Merge Sort</option>
-                    <option value="insertion">Insertion Sort</option>
                     <option value="selection">Selection Sort</option>
-                    <option value="quick">Quick Sort</option>
+                    
+                    {/*<option value="merge">Merge Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>*/}
                 </select>
             </div>
 
