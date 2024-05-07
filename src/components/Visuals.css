@@ -1,0 +1,110 @@
+.visuals {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+
+.visualizer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.legend {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 2px 5px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.legend__lable {
+  height: 5px;
+  width: 20px;
+  background-color: rgb(31, 30, 30);
+  margin-right: 3px;
+}
+
+.visual__items {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 340px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(14, 12, 12);
+  position: relative;
+  color: rgb(146, 124, 211);
+  box-shadow: 0 0 10px rgba(146, 124, 211, 0.8);
+}
+.visual__items span {
+  color: rgb(146, 124, 211); /* Set text color */
+  text-shadow: 0 0 10px rgba(146, 124, 211, 0.8); /* Add glowing effect to numbers */
+}
+
+.visual__item {
+  position: absolute;
+ 
+}
+
+.visual__item > h4 {
+  font-size: 0.6rem;
+}
+
+.visual__btns {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure buttons stay on the same line */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: -20px;
+}
+
+.visual__btns > button {
+  width: 150px;
+  background-color: rgb(46, 190, 237); ;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(15, 15, 141);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.visual__btns > button:hover {
+  color: black;
+  background-color: blanchedalmond !important;
+ }
+ 
+
+@media only screen and (max-width: 900px) {
+  .visuals {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .visual__btns {
+    display: flex;
+    margin-top: -20px;
+  }
+
+  .visuals {
+    padding-top: 10px;
+  }
+
+  .visual__btns > button {
+    margin-bottom: -3px;
+  }
+}
+
+

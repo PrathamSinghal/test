@@ -1,0 +1,125 @@
+
+
+
+
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  background-color: hashtag#81e2ff;
+  padding: 0px 120px;
+  width: 800px;
+  gap: 10px;
+ }
+
+.header span {
+  color: rgb(109, 164, 237);
+}
+.header-logo-container {
+  display: flex;
+  justify-content: flex-end; /* Push the logo to the right */
+}
+.header-logo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  align-items: center;
+  margin-left: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+.header__options {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__option {
+  font-weight: 500;
+  margin-left: 200px;
+  color: rgb(97, 97, 97);
+  cursor: pointer;
+}
+
+#header__bar {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 120px;
+  width: 100%;
+  color: white;
+  background-color: rgb(242, 237, 232);
+  transition: 0.5s ease all;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__bar__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header__bar__icons {
+  color: white;
+}
+
+#header__bar img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-logo {
+    margin-right: -50px;
+  }
+
+  .header {
+    padding: 0px 10px;
+  }
+
+  .header__option {
+    font-size: 0.9rem;
+  }
+}
+.sorting-code {
+  text-align: center;
+  margin-top: 60px;
+  background-color: black; /* Increase upper margin to 40px */
+  
+}
+
+/* Remaining styles remain the same */
+.algorithm-dropdown {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.algorithm-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.algorithm {
+  margin: 20px auto; /* Add margin for spacing */
+  width: 100%; /* Set width to 100% of the container */
+  max-width: 400px; /* Set a maximum width if needed */
+  height: auto; /* Let the height adjust according to the aspect ratio */
+  text-align: center; /* Center the image horizontally */
+}
+
+.algorithm img {
+  max-width: 100%; /* Increase image size by 50% */
+  height: auto; /* Maintain aspect ratio */
+}
