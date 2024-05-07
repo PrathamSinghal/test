@@ -1,0 +1,41 @@
+.sorting-code {
+  text-align: center;
+  margin-top: 40px; /* Increase upper margin to 40px */
+  
+}
+
+/* Remaining styles remain the same */
+.algorithm-dropdown {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.algorithm-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.algorithm {
+  margin: 20px auto; /* Add margin for spacing */
+  width: 100%; /* Set width to 100% of the container */
+  max-width: 400px; /* Set a maximum width if needed */
+  height: auto; /* Let the height adjust according to the aspect ratio */
+  text-align: center; /* Center the image horizontally */
+}
+
+.algorithm img {
+  max-width: 100%; /* Increase image size by 50% */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+  
+  
+  
+  
